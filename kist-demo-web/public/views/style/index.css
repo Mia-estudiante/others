@@ -1,0 +1,101 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul, li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: fixed;
+    background-color: #f2f2f2;
+} */
+
+/* ********************************/
+/* 
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+} */
+
+
+/* Style the header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  /* Style the navigation links */
+  nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* nav ul #reidBtn {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  } */
+  
+  nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul #reidBtn:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Add margin to the body to offset content below the fixed header */
+  body {
+    margin-top: 50px;
+  }
+
+  nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  
+  img {
+    width: 100%;
+  }

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white
+}
+
+ul, li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.status {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #21d891;
+    margin-right: 3px;
+}
+
+span {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 126px;
+    height: 256px;
+    object-fit: cover;
+    /* width: 50px;
+    height: 50px;
+    margin-right: 0.3rem; */
+}
+
+/**************************************title-container*/
+
+.title-container {
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.title-container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-size: 10px;
+}
+
+/**************************************title-container*/
+
+/**************************************main-container*/
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px 0 10px;
+}
+
+.query-container {
+    /* flex: 5; */
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    height: 85vh;
+}
+
+.gallery-container {
+    /* flex: 12; */
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 85vh;
+    padding: 0 10px 10px 10px;
+
+}
+
+/**************************************main-container*/
+
+/**************************************query-container*/
+.query-container > .query-container-header,
+.gallery-container > .gallery-container-header {
+    display: flex;
+}
+
+.query-container > .query-container-header > div,
+.gallery-container > .gallery-container-header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    font-size: 0.5rem;
+}
+
+.query-container > .query-list {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.query-container > .query-list > .query-person {
+    margin-top: 10px;
+}
+
+.query-container > .query-list > .query-person,
+.cctv-container > .gallery-list > .gallery-person {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* width: 100%; */
+}
+
+.query-person > .id-info,
+.gallery-person > .id-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); 
+    /* width: 50%; */
+    position: absolute;
+    bottom: 0;
+}
+
+.query-container > .attr {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2); 
+    overflow-y: auto;
+}
+
+.attr > li {
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-evenly;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+}
+
+.attr > li > span {
+    padding: 7px;
+    background-color: #f4a261;
+    border-radius: 30px;
+}
+
+/**************************************query-container*/
+
+/**************************************gallery-container*/
+
+.gallery-container > div {
+    overflow-y: auto;    
+    /* overflow-x: auto; */
+}
+
+/**************************************gallery-container*/
+
+/**************************************cctv-container*/
+
+.cctv-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2); 
+    margin-top: 10px;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.cctv-container > .cctv-container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.cctv-container > .gallery-list {
+    display: flex;
+    overflow-x: auto;
+}
+
+.cctv-container > .gallery-list > .gallery-person {
+    padding-right: 20px;
+}
+
+/**************************************cctv-container*/

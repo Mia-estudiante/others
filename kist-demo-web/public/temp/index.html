@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="upload-box">
+        <h1>Query Person Upload</h1>
+        <div class="drag-drop-box">
+            <div class="drag-drop-content">
+                <img src="https://img.icons8.com/pastel-glyph/2x/image-file.png" alt="file-icon" id="file-icon">
+            </div>
+        </div>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="input-box">
+              <label for="upload">Upload</label>
+              <input type="file" id="upload" name="upload" accept=".jpg, .jpeg, .png">
+              <button type="submit" id="submitBtn" disabled>Submit</button>
+            </div>
+          </form>
+    </div>
+    <script src="/static/index.js"></script>
+</body>
+</html>
